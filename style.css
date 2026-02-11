@@ -8,8 +8,8 @@
 
 body {
   line-height: 1.6;
-  color: #333;
-  background: #ffffff;
+  color: #4a4a4a;
+  background: #fffaf7;
 }
 
 /* Layout Container */
@@ -21,12 +21,8 @@ body {
 
 /* Navigation */
 nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 20px 40px;
   background: #ffffff;
-  border-bottom: 1px solid #eee;
+  border-bottom: 1px solid #f0e6e6;
 }
 
 .logo {
@@ -49,12 +45,12 @@ nav a:hover {
   color: #0077ff;
 }
 
-/* Hero */
+/* Hero - cozy gradient */
 .hero {
   text-align: center;
   padding: 100px 20px;
-  background: linear-gradient(135deg, #0077ff, #00c6ff);
-  color: white;
+  background: linear-gradient(135deg, #f4a7b9, #a8d8d8);
+  color: #4a4a4a;
 }
 
 .hero h1 {
@@ -66,27 +62,27 @@ nav a:hover {
   font-size: 1.2rem;
 }
 
+/* Buttons */
 .btn {
   display: inline-block;
   margin-top: 20px;
   padding: 12px 25px;
-  background: white;
-  color: #0077ff;
+  background: #f4a7b9;
+  color: white;
   text-decoration: none;
-  border-radius: 6px;
+  border-radius: 8px;
   font-weight: bold;
   transition: 0.3s;
 }
 
 .btn:hover {
-  background: #f0f0f0;
+  background: #e58aa1;
 }
 
-/* Section Titles */
 section h2 {
   text-align: center;
   margin-bottom: 25px;
-  font-size: 1.8rem;
+  color: #5a5a5a;
 }
 
 /* Skills Grid */
@@ -114,16 +110,6 @@ section h2 {
 
 #contact a:hover {
   text-decoration: underline;
-}
-
-/* Project Cards (for projects page) */
-.project-card {
-  border: 1px solid #eee;
-  padding: 20px;
-  margin: 20px 0;
-  border-radius: 8px;
-  background: #ffffff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 /* Footer */
@@ -175,14 +161,11 @@ footer {
   margin-top: 30px;
 }
 
-/* Improved Project Cards */
-.project-card {
-  border: 1px solid #eee;
-  padding: 20px;
-  border-radius: 8px;
+.project-card,
+.contact-card {
   background: #ffffff;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border: 1px solid #f0e6e6;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.04);
 }
 
 .project-card h3 {
@@ -214,14 +197,6 @@ footer {
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 30px;
   margin-top: 30px;
-}
-
-.contact-card {
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 8px;
-  border: 1px solid #eee;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 .contact-card h3 {
@@ -272,4 +247,12 @@ form button {
 
 form button:hover {
   background: #005fcc;
+}
+
+a {
+  color: #f4a7b9;
+}
+
+a:hover {
+  color: #e58aa1;
 }
